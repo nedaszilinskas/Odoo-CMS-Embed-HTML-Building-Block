@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<template id="custom_snippet_embed" inherit_id="website.snippets">
+			<xpath expr="//div[@id='snippet_structure']" position="inside">
+
+                <div>
+                    <!-- Thumbnail -->
+                    <div class="oe_snippet_thumbnail">
+                        <img class="oe_snippet_thumbnail_img" src="/website_embed/static/src/img/thumbnail.png" />
+                        <span class="oe_snippet_thumbnail_title">Embed</span>
+                    </div>
+
+                    <!-- Snippet Body -->
+                    <section class="oe_snippet_body custom-snippet-embed">
+                        <p>Embed HTML here</p>
+                    </section>
+                </div>
+
+            </xpath>
+        </template>
+
+        <template id="custom_snippet_embed_options" inherit_id="website.snippet_options">
+            <xpath expr="." position="inside">
+                <div data-snippet-option-id="custom_snippet_embed" 
+                     data-selector=".custom-snippet-embed" 
+                     data-selector-children=".oe_structure">
+                    <li><a href="#" class="button js_edit_html">Edit HTML</a></li>
+                </div>
+            </xpath>
+        </template>
+
+    </data>
+</openerp>
