@@ -1,7 +1,7 @@
 Odoo-CMS-Embed-HTML-Building-Block
 ==================================
 
-This module appends the Odoo website builder building blocks collection with one more - HTML embedding building block.
+This module appends the Odoo v8 website builder building blocks collection with one more - HTML embedding building block for easy HTML embeding into website.
 
 ## Deploying
 
